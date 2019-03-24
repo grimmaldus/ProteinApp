@@ -11,9 +11,9 @@ public:
 	Model&			normalMatrix(const ci::mat3& m);
 	Model&			modelInfo(const ci::vec3& m);
 
-	const ci::vec3&	getModelInfo() const;
-	const ci::mat4&	getModelMatrix() const;
-	const ci::mat3&	getNormalMatrix() const;
+	const ci::vec3&		getModelInfo() const;
+	const ci::mat4&		getModelMatrix() const;
+	const ci::mat3&		getNormalMatrix() const;
 
 	void			setModelInfo(const ci::vec3& m);
 	void			setModelMatrix(const ci::mat4& m);
