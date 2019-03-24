@@ -2,8 +2,8 @@
 
 Atom::Atom(int id, std::string name, glm::vec3 position)
 {
-	this->mId		= id;
-	this->mName		= name;
+	this->mId	= id;
+	this->mName	= name;
 	this->mPosition = position;
 	this->mMatrix	= glm::mat4();
 }
