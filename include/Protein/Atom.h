@@ -11,8 +11,8 @@ public:
 	Atom(int id ,std::string name, glm::vec3 position);
 	~Atom();
 protected:
-	int			mId;
-	std::string mName;
+	int		mId;
+	std::string 	mName;
 	glm::vec3	mPosition;
 
 	// Atom physical properties
@@ -20,20 +20,20 @@ protected:
 protected: // Extras
 	
 	// Atom world matrix
-	glm::mat4   mMatrix;
+	glm::mat4   	mMatrix;
 
 	// Atom color
 	glm::vec3	mColor;
 public: // Mutators
-	int			const &getId()					{ return mId; }
-	std::string const &getName()				{ return mName; }
+	int	   	const &getId()				{ return mId; }
+	std::string 	const &getName()			{ return mName; }
 	glm::vec3	const &getPosition()			{ return mPosition; }
-	float		const &getRadii()				{ return mRadii; }
+	float		const &getRadii()			{ return mRadii; }
 	
 	void setName(std::string name)				{ mName = name; }
-	void setPosition(glm::vec3 position)		{ mPosition = position; }
+	void setPosition(glm::vec3 position)			{ mPosition = position; }
 	void setPosition(glm::mat4 transformation);
-	void setRadii(float radii)					{ mRadii = radii; }
+	void setRadii(float radii)				{ mRadii = radii; }
 
 	// Extras
 	glm::vec3   const &getColor()				{ return mColor; }
