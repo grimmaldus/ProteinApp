@@ -20,7 +20,7 @@ public:
 	~Protein();
 protected:
 	// Name
-	std::string							mName;
+	std::string				mName;
 
 	// Color Scheme
 	std::map<std::string, glm::vec3>	mColorScheme;
@@ -29,17 +29,17 @@ protected:
 	std::map<std::string, float>		mAtomRadii;
 
 	// Atom Containers
-	std::vector<AtomRef>				mAtoms;	    // Order given by pdb; ID of atom is its position in container; Not safe but enough for our Prototype   
+	std::vector<AtomRef>			mAtoms;	    // Order given by pdb; ID of atom is its position in container; Not safe but enough for our Prototype   
 
 	// Protein structure properties
-	glm::vec3							mUpperBound;
-	glm::vec3							mLowerBound;
-	glm::mat4							mBoundingBoxMatrix;
+	glm::vec3				mUpperBound;
+	glm::vec3				mLowerBound;
+	glm::mat4				mBoundingBoxMatrix;
 
 	// Selection
-	std::set<int>						mSelected;  // Container of selected atoms, for efficient handling (Assuming that selection will be smaller than whole atoms)  
+	std::set<int>				mSelected;  // Container of selected atoms, for efficient handling (Assuming that selection will be smaller than whole atoms)  
 
-	float								mSizeOfStructure;
+	float					mSizeOfStructure;
 
 	// Secondary structures
 
@@ -59,8 +59,8 @@ protected:
 	void moveTo(glm::vec3 position); 
 public: // Functions
 	void loadProtein(const ci::DataSourceRef colorDataRef,
-					 const ci::DataSourceRef radiiDataRef,
-					 const ci::DataSourceRef pdbDataRef);
+			 const ci::DataSourceRef radiiDataRef,
+			 const ci::DataSourceRef pdbDataRef);
 	// Clean up
 	void cleanUp();
 
@@ -68,12 +68,12 @@ public: // Functions
 	bool select(int atomId);	// (de)select
 public:	// Mutators
 	
-	std::vector<AtomRef>			const &getAtoms()			    { return mAtoms; }
-	std::set<int>					const &getSelected()			{ return mSelected; }
-	glm::mat4						const &getBoundingBoxMatrix()   { return mBoundingBoxMatrix; }
-	glm::vec3						const &getBoundUpper()		    { return mLowerBound; }
-	glm::vec3						const &getBoundLower()		    { return mUpperBound; }
-	float							const &getSizeOfStructure()		{ return mSizeOfStructure; }
+	std::vector<AtomRef>			const &getAtoms()		{ return mAtoms; }
+	std::set<int>				const &getSelected()		{ return mSelected; }
+	glm::mat4				const &getBoundingBoxMatrix()   { return mBoundingBoxMatrix; }
+	glm::vec3				const &getBoundUpper()		{ return mLowerBound; }
+	glm::vec3				const &getBoundLower()		{ return mUpperBound; }
+	float					const &getSizeOfStructure()	{ return mSizeOfStructure; }
 };
 
 class ProteinExc : public std::exception {
