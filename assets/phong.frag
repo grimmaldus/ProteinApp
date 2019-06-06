@@ -64,7 +64,7 @@ vec3 T(float s, float t) //Profile -> depends of material color now it's red
 {
 	return vec3(0.233, 0.455, 0.649) * exp(-s*s/0.0064*t) +
 		   vec3(0.1,   0.366, 0.344) * exp(-s*s/0.0484*t) +
-		   vec3(0.118, 0.198, 0.0)	 * exp(-s*s/0.187*t)  +
+		   vec3(0.118, 0.198, 0.0) * exp(-s*s/0.187*t)  +
 		   vec3(0.113, 0.007, 0.007) * exp(-s*s/0.567*t)  +
 		   vec3(0.358, 0.004, 0.0)   * exp(-s*s/1.99*t)   +
 		   vec3(0.078, 0.0,   0.0)   * exp(-s*s/7.41*t);
