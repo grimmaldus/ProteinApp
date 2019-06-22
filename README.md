@@ -1,6 +1,6 @@
 # ProteinApp
 This is only a demo app of subsurface scattering. 
-# Controls
+## Controls
 1) Loading protein: Drag 'n' Drop pdb file onto application window. 
 2) Menu on the side:  
 	Show thickness - Turn on/off it's an abs distance of (dIn(incident light) - dOut(outgoing light))
