@@ -9,4 +9,4 @@ This is only a demo app of subsurface scattering.
 	
 	Lighting - Drop menu with lighting models of Subsurface Scattering 
 	Show only Transmittance - Shows only transmittance function T(s)
-	Extinction coeficient - Controls intensity of attenuation of ligh wihin the object.
+	Extinction coeficient - Controls intensity of attenuation of light wihin the object.
